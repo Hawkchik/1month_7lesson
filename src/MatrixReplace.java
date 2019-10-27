@@ -26,7 +26,7 @@ public class MatrixReplace {
             arr2[b][i] = arr1[b][i];
 
         }
-        System.out.println(Arrays.deepToString(arr2));
+        System.out.println(Arrays.deepToString(arr2)); //Печатаем новый массив
 
 
         for (int i = 0; i < 5; i++) {
