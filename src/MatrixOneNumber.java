@@ -13,12 +13,12 @@ for (int i=0;i<a;i++)
 {
     for (int k = 0; k<a;k++){
 
-        if (matrix[i][k]==matrix[i][k]){
+        if (i==k){
             matrix[i][k]=1;
         }
     }
-    System.out.println(Arrays.deepToString(matrix));
-}
 
+}
+        System.out.println(Arrays.deepToString(matrix));
     }
 }
