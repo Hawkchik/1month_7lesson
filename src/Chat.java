@@ -17,13 +17,10 @@ public class Chat {
         int fantastic = 0;
 
         Questions questions = new Questions();
-        Answers answers = new Answers();
         System.out.println(questions.romantic1); //1 вопрос
-        String c = scanner.nextLine();
         Check_answers one = new Check_answers();
+        String c = scanner.nextLine();
         romantic=one.Romantic1(c);
-
-
 
         System.out.println(questions.scary1); //2 вопрос
         String d = scanner.nextLine();
@@ -65,19 +62,20 @@ public class Chat {
         String m = scanner.nextLine();
         fantastic=one.Fantastic2(m);
 
-            System.out.println(questions.romantic3);//12 вопрос
+        System.out.println(questions.romantic3);//12 вопрос
         String n = scanner.nextLine();
         romantic=one.Romantic3(n);
-            System.out.println(questions.action2);//13 вопрос
-            String o = scanner.nextLine();
-        action=one.Action2(o);
-            System.out.println(questions.fantastic3);//14 вопрос
-            String p = scanner.nextLine();
 
+        System.out.println(questions.action2);//13 вопрос
+        String o = scanner.nextLine();
+        action=one.Action2(o);
+
+        System.out.println(questions.fantastic3);//14 вопрос
+        String p = scanner.nextLine();
         fantastic=one.Fanstastic3(p);
 
-            System.out.println(questions.action3);//15 вопрос
-            String q = scanner.nextLine();
+        System.out.println(questions.action3);//15 вопрос
+        String q = scanner.nextLine();
         action=one.Action3(q);
 
             int result = action + fantastic + romantic + scary + comedy;
