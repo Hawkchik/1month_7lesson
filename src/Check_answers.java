@@ -24,7 +24,7 @@ public class Check_answers {
 
 
 
-    public int romantic3(String c) {
+    public int Romantic3(String c) {
         if (c.toUpperCase().equals(answers.twelve.toUpperCase())){
             romantic++;
         }
@@ -93,7 +93,7 @@ public class Check_answers {
 
     }
 
-    public int fantastic2(String c) {
+    public int Fantastic2(String c) {
         if (c.toUpperCase().equals(answers.eleven.toUpperCase())){
             fantastic+=2;
         }

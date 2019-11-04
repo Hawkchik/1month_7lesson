@@ -27,81 +27,58 @@ public class Chat {
 
         System.out.println(questions.scary1); //2 вопрос
         String d = scanner.nextLine();
-        if (d.toUpperCase().equals(answers.second.toUpperCase())) {
-            scary++;
-        }
+        scary=one.Scary1(d);
 
         System.out.println(questions.comedy1);//3 вопрос
         String e = scanner.nextLine();
-        if (e.toUpperCase().equals(answers.third.toUpperCase())) {
-            comedy++;
-        }
+        comedy=one.Comedy1(e);
 
         System.out.println(questions.comedy2);//4 вопрос
         String f = scanner.nextLine();
-        if (f.toUpperCase().equals(answers.four.toUpperCase())) {
-            comedy = comedy + 2;
-        }
+        comedy=one.Comedy2(f);
 
         System.out.println(questions.romantic2);//5 вопрос
         String g = scanner.nextLine();
-        if (g.toUpperCase().equals(answers.five.toUpperCase())) {
-            romantic = romantic + 2;
-        }
+        romantic=one.Romantic2(g);
 
         System.out.println(questions.scary2);//6 вопрос
         String h = scanner.nextLine();
-        if (h.toUpperCase().equals(answers.six.toUpperCase())) {
-            scary = scary + 2;
-        }
+        scary=one.Scary2(h);
 
         System.out.println(questions.action1);//7 вопрос
         String i = scanner.nextLine();
-        if (i.toUpperCase().equals(answers.seven.toUpperCase())) {
-            action++;
-        }
+        action=one.Action1(i);
 
         System.out.println(questions.fantastic1);//8 вопрос
         String j = scanner.nextLine();
-        if (j.toUpperCase().equals(answers.eight.toUpperCase())) {
-            fantastic++;
-        }
+        fantastic=one.Fantastic1(j);
 
         System.out.println(questions.comedy3);//9 вопрос
         String k = scanner.nextLine();
-        if (k.toUpperCase().equals(answers.nine.toUpperCase())) {
-            comedy = comedy + 3;
-        }
+        comedy=one.Comedy3(k);
 
         System.out.println(questions.scary3);//10 вопрос
         String l = scanner.nextLine();
-        if (l.toUpperCase().equals(answers.ten.toUpperCase())) {
-            scary = scary + 3;
-            System.out.println(questions.fantastic2);//11 вопрос
-            String m = scanner.nextLine();
-            if (m.toUpperCase().equals(answers.eleven.toUpperCase())) {
-                fantastic = fantastic + 2;
-            }
+        scary=one.Scary3(l);
+
+        System.out.println(questions.fantastic2);//11 вопрос
+        String m = scanner.nextLine();
+        fantastic=one.Fantastic2(m);
+
             System.out.println(questions.romantic3);//12 вопрос
-            String n = scanner.nextLine();
-            if (n.toUpperCase().equals(answers.twelve.toUpperCase())) {
-                romantic = romantic + 3;
-            }
+        String n = scanner.nextLine();
+        romantic=one.Romantic3(n);
             System.out.println(questions.action2);//13 вопрос
             String o = scanner.nextLine();
-            if (o.toUpperCase().equals(answers.thirteen.toUpperCase())) {
-                action = action + 2;
-            }
+        action=one.Action2(o);
             System.out.println(questions.fantastic3);//14 вопрос
             String p = scanner.nextLine();
-            if (p.toUpperCase().equals(answers.fourteen.toUpperCase())) {
-                fantastic = fantastic + 3;
-            }
+
+        fantastic=one.Fanstastic3(p);
+
             System.out.println(questions.action3);//15 вопрос
             String q = scanner.nextLine();
-            if (q.toUpperCase().equals(answers.fifteen.toUpperCase())) {
-                action = action + 3;
-            }
+        action=one.Action3(q);
 
             int result = action + fantastic + romantic + scary + comedy;
             System.out.println(result);
@@ -121,4 +98,4 @@ public class Chat {
 
 
     }
-}
+
