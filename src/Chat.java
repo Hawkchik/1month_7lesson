@@ -16,15 +16,15 @@ public class Chat {
         int action = 0;
         int fantastic = 0;
 
-
         Questions questions = new Questions();
         Answers answers = new Answers();
         System.out.println(questions.romantic1); //1 вопрос
         String c = scanner.nextLine();
-        if (c.toUpperCase().equals(answers.first.toUpperCase())) {
+        Check_answers one = new Check_answers();
+        romantic=one.Romantic1(c);
 
-            romantic++;
-        }
+
+
         System.out.println(questions.scary1); //2 вопрос
         String d = scanner.nextLine();
         if (d.toUpperCase().equals(answers.second.toUpperCase())) {
@@ -110,14 +110,13 @@ public class Chat {
 
                 System.out.println("Пора посмотреть все фильмы, плохо совсем плохо");
             } else if (result <= 28) {
-                System.out.println("Ты киноман, но не слишком уверенный. ))");
-            } else if (result <=30 ) {
+                System.out.println("Ты киноман, но не слишком уверенный, пора спать. ))");
+            } else if (result <= 30) {
                 System.out.println("Ты мега гуру в кино будь счастлив!!! Пора заняться программированием");
-            }
-            else {
+            } else {
                 System.out.println("Что то пошло не так при подсчёте программы");
 
-        }
+            }
         }
 
 
